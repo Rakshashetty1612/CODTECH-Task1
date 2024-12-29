@@ -1,0 +1,235 @@
+/*html code*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p> Hello! I’m Raksha, a passionate and dedicated student pursuing my Master’s in Computer Applications at Sir M. Visvesvaraya Institute of Technology.
+            With a strong foundation in programming and web technologies, I am driven by the desire to solve problems and learn new skills.
+            My technical expertise includes C, Java, Python, basic of PHP and web development, complemented by soft skills such as communication, creativity, time management, and problem-solving.<br><br>
+           
+            In addition to my academic pursuits, I have hands-on experience developing a Library Management System and NutriTrack web application, showcasing my ability to design practical applications. 
+            Beyond coding, I enjoy expressing creativity through sketching and Mehendi art, and I have been actively involved in volunteering and team sports.<br><br>
+            
+            I am eager to contribute to a dynamic environment where I can apply my skills, grow professionally, and collaborate with a passionate team.</p>
+    </section>
+
+    <section id="project">
+        <h2>Projects</h2>
+        <div id="project-list">
+            <h3>Library Management System</h3>
+            <p>
+                The Library Management System is a web application designed to manage and store book information electronically. 
+                It enables the efficient handling of library operations, including maintaining records of students, staff, books, and periodicals. 
+                The system was developed using PHP and Oracle database, ensuring seamless data management and accessibility. 
+                It simplifies the borrowing and returning processes, contributing to an organized and digitalized library environment. 
+                This project highlights practical database integration and user-friendly design.
+            </p>
+        </div>
+    </div>
+    <div id="project-list">
+        <h3>NutriTrack</h3>
+        <p>
+            NutriTrack is a web application offering personalized nutrition guidance to support informed food choices and overall wellness. 
+            Built using HTML, CSS, Java, PHP, and MySQL, it provides a robust and interactive platform for users to access nutritional information. 
+            Utilizing Bootstrap for responsive design and jQuery for dynamic interactions, NutriTrack ensures a seamless user experience. 
+            The platform addresses diverse dietary needs, promoting health and fitness effectively.
+        </p>
+    </div>
+    </section>
+    <section id="blog">
+        <h2>Blog</h2>
+        <div id="blog-list">
+            <h2>Building a Library Management System: My Journey</h2>
+            <p>
+                Libraries have always been a cornerstone of knowledge, and with the advent of technology, they are evolving into more efficient and organized systems. 
+                As part of my academic journey, I took on the challenge of developing a Library Management System to experience firsthand how software solutions can transform traditional processes.
+            </p>
+            <h3>The Idea</h3>
+            <p>The goal was simple: create a web application that streamlines library operations. 
+                This system would store book records electronically, manage student and staff data, and make tracking borrowed books hassle-free.</p>
+            
+            <h3>Development Process</h3>
+            <ol>
+                <li>Planning: I identified the key functionalities the system needed: cataloging books, managing user data, and tracking transactions.</li>
+                <li>Technology Stack: I chose PHP for the backend and an Oracle database for secure and efficient data storage.</li>
+                <li>Implementation: Over a few weeks, I developed features like book searches, borrowing and return tracking, and user management.</li>
+                <li>Challenges: One major challenge was ensuring data consistency during simultaneous transactions. I resolved this by implementing proper database locking mechanisms.</li>
+            </ol>
+
+            <h3>What I Learned</h3>
+            <p>
+                This project taught me the importance of designing for both scalability and usability. 
+                The experience strengthened my skills in database integration and backend development, and I realized how impactful even a small software system could be in improving everyday tasks.
+            </p>
+
+            <h3>Future Improvements</h3>
+            <p>While the system meets its current requirements, I aim to integrate advanced features like analytics to track book popularity and a recommendation engine for users.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            Name: <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+            Email: <input type="email" id="email" name="email" placeholder="example@mail.com"><br><br>
+            Message: <textarea id="message" name="message" placeholder="your message"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+/*CSS*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(45deg, #ff5f6d, #ffc371);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  color: #ff5f6d;
+}
+
+h2 {
+  border-bottom: 2px solid #ff5f6d;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#about, #project, #blog, #contact {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about:hover, #project:hover, #blog:hover, #contact:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#project-list, #blog-list {
+  margin-top: 20px;
+}
+
+#project-list h3, #blog-list h3 {
+  background: #ae7277;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#project-list p, #blog-list p {
+  background: #f0f0f0;
+  padding: 15px;
+  border-left: 4px solid #ff5f6d;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background: #cb9a9e;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background: #68242b;
+  transform: scale(1.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5f6d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3f4e;
+}
+
