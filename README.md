@@ -77,3 +77,8 @@ User Experience: Organizing sections well and making navigation easy for a pleas
 Interactivity: Enhancing user interaction with transitions and scale effects.
 
 Showcasing Skills: Demonstrating your technical expertise, creativity, and problem-solving abilities through projects and blog posts.
+
+
+# Output of the task
+
+![my portfolio](https://github.com/user-attachments/assets/4160be96-b2d8-4a5c-a89e-5dab6b84e1a7)
