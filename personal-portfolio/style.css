@@ -1,0 +1,131 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(45deg, #ff5f6d, #ffc371);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  color: #ff5f6d;
+}
+
+h2 {
+  border-bottom: 2px solid #ff5f6d;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#about, #project, #blog, #contact {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about:hover, #project:hover, #blog:hover, #contact:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#project-list, #blog-list {
+  margin-top: 20px;
+}
+
+#project-list h3, #blog-list h3 {
+  background: #ae7277;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#project-list p, #blog-list p {
+  background: #f0f0f0;
+  padding: 15px;
+  border-left: 4px solid #ff5f6d;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background: #cb9a9e;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background: #68242b;
+  transform: scale(1.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5f6d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3f4e;
+}
